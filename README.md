@@ -50,6 +50,7 @@ guiApplications=true
 (Nota: Reinicia WSL con wsl --shutdown después de aplicar estos cambios).
 
 🚀 Uso Táctico (Ejemplos de Comandos)
+
 1. Análisis de Logs (Blue Team):
 
 Utilizamos Llama 3.1 por su ventana de contexto extendida para buscar inyecciones SQL en un log web:
