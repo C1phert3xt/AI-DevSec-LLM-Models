@@ -34,7 +34,7 @@ Modelos con ventanas de contexto masivas (128k tokens) capaces de ingerir miles 
 
 Para ejecutar este arsenal de forma fluida, especialmente los modelos pesados, se recomienda una máquina con al menos 16GB de VRAM y 64GB de RAM. 
 
-Si ejecutas esto en **WSL2 (Windows Subsystem for Linux)**, es crítico optimizar la asignación de recursos creando un archivo `.wslconfig` en la carpeta raíz de tu usuario de Windows (`C:\Users\TuUsuario\.wslconfig`):
+Si ejecutas esto en **WSL2 (Windows Subsystem for Linux)**, en mi caso Kali-Linux, es crítico optimizar la asignación de recursos creando un archivo `.wslconfig` en la carpeta raíz de tu usuario de Windows (`C:\Users\TuUsuario\.wslconfig`):
 
 ```ini
 [wsl2]
