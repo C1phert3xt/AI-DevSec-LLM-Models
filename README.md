@@ -51,12 +51,14 @@ guiApplications=true
 
 🚀 Uso Táctico (Ejemplos de Comandos)
 1. Análisis de Logs (Blue Team):
+
 Utilizamos Llama 3.1 por su ventana de contexto extendida para buscar inyecciones SQL en un log web:
 
 ollama run llama3.1 "Actúa como un analista SOC. Analiza este log de Apache y extrae cualquier intento de SQLi, devolviendo solo la IP atacante y el payload: $(cat access.log)"
 
 
 2. Creación de Reglas de Detección:
+
 Utilizamos Qwen 2.5 Coder para traducir un comportamiento malicioso a una regla de detección:
 
 ollama run qwen2.5-coder "Escribe una regla YARA para detectar un binario de Windows que importa 'VirtualAlloc' y contiene la cadena en base64 'cG93ZXJzaGVsbCAi'"
