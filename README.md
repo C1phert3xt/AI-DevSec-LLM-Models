@@ -66,11 +66,11 @@ ollama run qwen2.5-coder "Escribe una regla YARA para detectar un binario de Win
 
 El verdadero poder de tener este arsenal en local es la automatización. En lugar de copiar y pegar código en una interfaz web, podemos usar un script en Python para leer archivos fuente y enviarlos a la API local de Ollama para que busque vulnerabilidades silenciosamente.
 
-### El Script: `xibalba_analyzer.py`
+### El Script: `ai_devsec_analyzer.py`
 
 Este script utiliza `qwen2.5-coder` (nuestro experto en código) para analizar cualquier archivo en busca de fallos de seguridad (Buffer Overflows, inyecciones SQL, credenciales hardcodeadas, etc.).
 
-Crea el archivo `xibalba_analyzer.py`:
+Crea el archivo `ai_devsec_analyzer.py`:
 
 ```python
 import requests
@@ -137,6 +137,7 @@ if __name__ == "__main__":
 
 
 🚀 Cómo usarlo
+
 Instala la dependencia de colores si no la tienes: pip install requests colorama
 
 Pídele al script que analice un script sospechoso o tu propio desarrollo:
